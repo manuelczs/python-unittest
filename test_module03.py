@@ -22,6 +22,8 @@ class TestClass03(unittest.TestCase):
   def test_04(self):
     print('\nRunning test method: ' + inspect.stack()[0][3])
     my_var = 3.14
+    # Here test_04 throws an error, because int does not
+    # match with my_var type
     self.assertTrue(isinstance(my_var, int))
 
 
